@@ -33,6 +33,10 @@ window.addEventListener('DOMContentLoaded', () => {
 			seconds = timer.querySelector('#seconds'),
 			updateTime = setInterval(updateClock, 1000);
 
+		const title = document.querySelector('.title'),
+			timerBlock = document.querySelector('.timer'),
+			image = document.querySelector('.img');
+
 		updateClock();
 
 		function updateClock() {
@@ -45,6 +49,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
 			if (t.total <= 0) {
 				clearInterval(updateTime);
+				title.remove();
+				timerBlock.remove();
+				image.classList.remove('hide');
+				image.classList.add('show');
 			}
 		}
 		function zeroAdder(num) {
@@ -55,7 +63,11 @@ window.addEventListener('DOMContentLoaded', () => {
 				return num;
 			}
 		}
+
 	}
 
 	setClock('.timer', deadLine);
+
+
+
 });
