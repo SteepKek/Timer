@@ -86,13 +86,20 @@ h6 {
 }
 
 body {
-  background-color: #000;
+  background-color: #fff;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   font-size: 68px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+}
+
+.title .title__text {
+  text-align: center;
+  font-size: 72px;
+  font-weight: bold;
 }
 
 .timer {

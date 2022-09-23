@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-	const deadLine = '2022-09-30';
+	const deadLine = '2022-09-24';
 
 	function calculateTime(endtime) {
 		let days, hours, minutes, seconds;
