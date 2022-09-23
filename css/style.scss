@@ -22,7 +22,13 @@ body {
 	}
 }
 
-.img {}
+.img {
+	text-align: center;
+
+	.img__title {
+		font-weight: bold;
+	}
+}
 
 .show {
 	display: block;

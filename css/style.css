@@ -106,11 +106,18 @@ body {
   font-weight: bold;
 }
 
-div.show {
+.img {
+  text-align: center;
+}
+.img .img__title {
+  font-weight: bold;
+}
+
+.show {
   display: block;
 }
 
-div.hide {
+.hide {
   display: none;
 }
 
