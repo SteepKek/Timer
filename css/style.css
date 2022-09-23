@@ -92,10 +92,14 @@ body {
   font-size: 68px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
+.title {
+  margin-bottom: 15px;
+}
 .title .title__text {
   text-align: center;
   font-size: 72px;
